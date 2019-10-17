@@ -238,12 +238,14 @@ codesize:
 
 f: libclean all
 	@rm -rf $(ASSETDIR)/$(ANAME)
-	@echo "\033[38;5;93mRUNING TESTS:"
+	clear
+	@echo "\033[38;5;93mRUNNING TESTS:"
 	@./$(WRAPNAME) ${SPEED}
 
 b: libclean all
 	@rm -rf $(ASSETDIR)/$(ANAME)
-	@echo "\033[38;5;93mRUNING BENCH:"
+	clear
+	@echo "\033[38;5;93mRUNNING BENCH:"
 	@./$(WRAPNAME) -b ${ARGS}
 
 libft: libclean all

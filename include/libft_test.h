@@ -73,7 +73,6 @@ typedef struct	s_tests {
 
 typedef struct	s_list {
 	void			*content;
-	size_t			content_size;
 	struct s_list	*next;
 }				t_list;
 
@@ -333,10 +332,10 @@ void			test_ft_strmap(void);
 void			test_ft_strmapi(void);
 void			test_ft_strequ(void);
 void			test_ft_strnequ(void);
-void			test_ft_strsub(void);
+void			test_ft_substr(void);
 void			test_ft_strjoin(void);
 void			test_ft_strtrim(void);
-void			test_ft_strsplit(void);
+void			test_ft_split(void);
 void			test_ft_itoa(void);
 void			test_ft_putchar(void);
 void			test_ft_putstr(void);
